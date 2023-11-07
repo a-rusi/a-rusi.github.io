@@ -6,7 +6,7 @@ baseURL = "http://a-rusi.github.io"
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "Matter Patcher - Ale Rusi"
+title = "Matter Patcher - arusi"
 author = "Alejandro Rusi"
 copyright = "Copyright © 2023, Alejandro Rusi."
 languageCode = "en-US"
