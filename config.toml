@@ -8,6 +8,14 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+title = "arusi's long running query"
+description = ""
+
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+default_language = "en"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -15,3 +23,31 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+math = true
+mermaid = true
+title_separator = " | "
+header_menu_name = "menu_name"
+
+
+# Prioritize summary over description.
+page_summary_on_paginator = true
+
+
+[extra.menus]
+header_menu_name = "test"
+menu_name = [
+  { url = "$BASE_URL/blog/", name = "Archive" },
+  { url = "$BASE_URL/categories/", name = "Categories" },
+  { url = "$BASE_URL/tags/", name = "Tags" },
+  { url = "$BASE_URL/about/", name = "About" },
+]
+
+# Example multilingual menu.
+multilingual_menu_name = [
+  { url = "$BASE_URL/about/", names = { en = "About", fr = "About in French" } },
+  { url = "$BASE_URL/projects/", names = { en = "Projects", fr = "Projects in French" } },
+  { url = "$BASE_URL/blog/", names = { en = "Archive", fr = "Archive in French" } },
+  { url = "$BASE_URL/categories/", names = { en = "Categories", fr = "Categories in French" } },
+  { url = "$BASE_URL/tags/", names = { en = "Tags", fr = "Tags in French" } },
+  { url = "$BASE_URL/authors/", names = { en = "Authors", fr = "Authors in French" } },
+]
