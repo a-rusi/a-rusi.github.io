@@ -1,4 +1,4 @@
-base_url = "http://www.arusi.dev/"
+base_url = "https://arusi.dev/"
 theme = "linkita"
 
 compile_sass = true
