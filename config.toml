@@ -35,20 +35,20 @@ page_summary_on_paginator = true
 [extra.menus]
 header_menu_name = "test"
 menu_name = [
-  { url = "$BASE_URL/blog/", name = "Archive" },
-  { url = "$BASE_URL/categories/", name = "Categories" },
-  { url = "$BASE_URL/tags/", name = "Tags" },
+  { url = "$BASE_URL/blog/", name = "Posts" },
+  { url = "$BASE_URL/projects/", name = "Projects" },
   { url = "$BASE_URL/about/", name = "About" },
+
 ]
 
 # Example multilingual menu.
 multilingual_menu_name = [
-  { url = "$BASE_URL/about/", names = { en = "About", fr = "About in French" } },
-  { url = "$BASE_URL/projects/", names = { en = "Projects", fr = "Projects in French" } },
-  { url = "$BASE_URL/blog/", names = { en = "Archive", fr = "Archive in French" } },
-  { url = "$BASE_URL/categories/", names = { en = "Categories", fr = "Categories in French" } },
-  { url = "$BASE_URL/tags/", names = { en = "Tags", fr = "Tags in French" } },
-  { url = "$BASE_URL/authors/", names = { en = "Authors", fr = "Authors in French" } },
+  { url = "$BASE_URL/about/", names = { en = "About"} },
+  { url = "$BASE_URL/projects/", names = { en = "Projects"} },
+  { url = "$BASE_URL/blog/", names = { en = "Posts" } },
+  { url = "$BASE_URL/categories/", names = { en = "Categories" } },
+  { url = "$BASE_URL/tags/", names = { en = "Tags" } },
+  { url = "$BASE_URL/authors/", names = { en = "Authors" } },
 ]
 
 [extra.style]
@@ -75,7 +75,7 @@ avatar_alt = ""
 
 avatar_invert = false
 name = "Alejandro Rusi"
-bio = "Test bio"
+bio = "Data Engineer. Trying to hand-wave as little as humanly possible."
 
 # Social icons.
 # "name" should be the file name of "static/icons/*.svg" or
@@ -83,10 +83,10 @@ bio = "Test bio"
 # "url" supports "$BASE_URL".
 # Other variables: "urls", "title", "titles".
 social = [
-    { name = "bluesky", url = "https://bsky.app/profile/username" },
-    { name = "github", url = "https://github.com/username" },
-    { name = "email", url = "mailto:example@example.com" },
-    { name = "rss", url = "$BASE_URL/atom.xml" },
+    { name = "bluesky", url = "https://bsky.app/profile/arusi-ruse.bsky.social" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/alejandro-rusi/" },
+    { name = "github", url = "https://github.com/a-rusi" },
+    { name = "rss", url = "$BASE_URL/rss.xml" },
 ]
 
 [extra.cover]
