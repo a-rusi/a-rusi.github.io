@@ -1,13 +1,11 @@
-# The URL the site will be built for
 base_url = "http://www.arusi.dev/"
 theme = "linkita"
 
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+author = "Alejandro Rusi"
 title = "arusi's long running query"
 description = ""
 
@@ -16,17 +14,18 @@ feed_filenames = ["rss.xml"]
 
 default_language = "en"
 
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
 math = true
 mermaid = true
 title_separator = " | "
 header_menu_name = "menu_name"
+disable_default_favicon = true
 
 
 # Prioritize summary over description.
@@ -51,3 +50,55 @@ multilingual_menu_name = [
   { url = "$BASE_URL/tags/", names = { en = "Tags", fr = "Tags in French" } },
   { url = "$BASE_URL/authors/", names = { en = "Authors", fr = "Authors in French" } },
 ]
+
+[extra.style]
+# The custom background color.
+bg_color = "#fdf6e3"
+# The custom background color in dark mode.
+bg_dark_color = "#2d353b"
+
+# Enable header blur.
+header_blur = false
+
+# The custom header color, only available
+# when "header_blur" is false.
+header_color = "#a7c082"
+# The custom header color in dark mode, only available
+# when "header_blur" is false.
+header_dark_color = "#4a5d3a"
+
+[extra.profiles.arusi]
+avatar_url = "icons/bubble.ico"
+
+# A description of what is in the avatar.
+avatar_alt = ""
+
+avatar_invert = false
+name = "Alejandro Rusi"
+bio = "Test bio"
+
+# Social icons.
+# "name" should be the file name of "static/icons/*.svg" or
+# the icon name of https://simpleicons.org/
+# "url" supports "$BASE_URL".
+# Other variables: "urls", "title", "titles".
+social = [
+    { name = "bluesky", url = "https://bsky.app/profile/username" },
+    { name = "github", url = "https://github.com/username" },
+    { name = "email", url = "mailto:example@example.com" },
+    { name = "rss", url = "$BASE_URL/atom.xml" },
+]
+
+[extra.cover]
+
+# Path to the cover image.
+image = "background/test.jpg"
+# A description of the cover image.
+alt = ""
+
+# Width of the cover image in pixels.
+# Default value: get_image_metadata()
+# width =
+# Height of the cover image in pixels.
+# Default value: get_image_metadata()
+# height =
